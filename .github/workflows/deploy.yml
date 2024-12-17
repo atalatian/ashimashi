@@ -34,4 +34,4 @@ jobs:
         with:
           branch: gh-pages  # Deploy to the gh-pages branch
           folder: dist  # The folder that contains the production-ready build
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token for authentication
+          token: ${{ secrets.GH_TOKEN }}  # Use the GitHub token for authentication
