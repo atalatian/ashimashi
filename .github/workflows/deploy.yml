@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Trigger deployment on push to the main branch (adjust if needed)
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
@@ -32,5 +35,4 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main
           folder: dist
